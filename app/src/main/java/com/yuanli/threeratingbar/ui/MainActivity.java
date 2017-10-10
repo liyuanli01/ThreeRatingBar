@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         rating= String.valueOf(ratingTotal.getRating());//获取当前星级
         ratingTotal.setClickable(true);//默认可点击不用设置，false为不可点击
 
+
         //点击设置星级
         ratingTotal.setOnRatingBarChangeListener(new ThreeLevelRatingBarView.OnRatingBarChangeListener() {
             @Override
