@@ -35,3 +35,28 @@
         app:selection_icon_half_bad="@mipmap/evaluate_bad_face_half"
         app:starCount="5"
         app:starImageSize="96"/>
+        
+ ### 使用
+     @Bind(id.rate_communicate)
+    ThreeLevelRatingBarView rateCommunicate;
+
+//禁止再点击<br>
+rateCommunicate.setClickable(false);<br>
+//获取并设置rating<br>
+CommunicationScore = rateCommunicate.getRating() + "";<br>
+
+rateCommunicate.setRating(Float.parseFloat(CommunicationScore));<br>
+
+//点击监听<br>
+rateCommunicate.setOnRatingBarChangeListener(new ThreeLevelRatingBarView.OnRatingBarChangeListener() {<br>
+            @Override<br>
+            public void onRatingChanged(float RatingScore) {<br>
+                if (RatingScore > 2) {<br>
+                    tvCommunicate.setText("好");<br>
+                } else if (RatingScore <= 1) {<br>
+                    tvCommunicate.setText("差");<br>
+                } else {<br>
+                    tvCommunicate.setText("一般");<br>
+                }<br>
+            }<br>
+        });
