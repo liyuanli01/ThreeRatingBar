@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         //代码操作与系统控件操作方法一致
-
         ratingTotal.setRating(2);//代码设置星级
         rating= String.valueOf(ratingTotal.getRating());//获取当前星级
         ratingTotal.setClickable(true);//默认可点击不用设置，false为不可点击
