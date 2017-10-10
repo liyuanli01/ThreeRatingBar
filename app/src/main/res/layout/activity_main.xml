@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuanli.threeratingbar.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:tag="50"
+        android:text="评分"
+        android:textSize="16sp"/>
+
+    <com.yuanli.threeratingbar.widget.ThreeLevelRatingBarView
+        android:id="@+id/ratingTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        app:default_icon="@mipmap/evaluate_default_face"
+        app:rating="1.36"
+        android:layout_toRightOf="@+id/tv_1"
+        app:selection_icon_bad="@drawable/rating_bar_bad_smile"
+        app:selection_icon_good="@drawable/rating_bar"
+        app:selection_icon_half_good="@mipmap/evaluate_yellow_half"
+        app:selection_icon_half_bad="@mipmap/evaluate_bad_face_half"
+        app:starCount="5"
+        app:starImageSize="96"/>
+</RelativeLayout>

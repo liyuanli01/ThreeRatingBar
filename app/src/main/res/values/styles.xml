@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--星级自定义属性-->
+    <declare-styleable name="ThirdRatingBarView">
+        <attr name="dividerWidth" format="dimension" />//间距
+        <attr name="default_icon" format="reference" />//默认图标
+        <attr name="selection_icon_bad" format="reference" />//差评图标
+        <attr name="selection_icon_good" format="reference" />//好评图标
+        <attr name="selection_icon_half_bad" format="reference" />//半星差图标
+        <attr name="selection_icon_half_good" format="reference" />//半星好图标
+        <attr name="starImageSize" format="float" />//星星大小
+        <attr name="starCount" format="integer" />//星星数量
+        <attr name="rating" format="float" />//当前评级
+    </declare-styleable>
+
+</resources>
