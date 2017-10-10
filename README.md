@@ -1,6 +1,11 @@
 # ThreeRatingBar
 自定义笑脸评分条
 
+## 效果图
+![](https://github.com/liyuanli01/ThreeRatingBar/raw/master/images/one.png)
+![](https://github.com/liyuanli01/ThreeRatingBar/raw/master/images/two.png)
+![](https://github.com/liyuanli01/ThreeRatingBar/raw/master/images/three.png)
+
 ### attrs.xml
     <!--星级自定义属性-->
     <declare-styleable name="ThirdRatingBarView">
